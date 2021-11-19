@@ -61,8 +61,14 @@ __[Наверх ↑](#Навигация)__
                 ]
             }
         ],
-        "frontImage": "gallery/1628861861901-front.jpg",
-        "backImage": "gallery/1628861861916-back.jpg",
+        "frontImage": "front.jpg",
+        "backImage": "back.jpg",
+        "photos": [
+            "photo-1.jpg",
+            "photo-2.jpg",
+            "photo-3.jpg",
+            "photo-4.jpg"
+        ],
         "aboutRU": "test",
         "aboutEN": "test",
         "aboutUK": "test",
@@ -96,8 +102,14 @@ __[Наверх ↑](#Навигация)__
                 ]
             }
         ],
-        "frontImage": "gallery/1628861861901-front.jpg",
-        "backImage": "gallery/1628861861916-back.jpg",
+        "frontImage": "front.jpg",
+        "backImage": "back.jpg",
+        "photos": [
+            "photo-1.jpg",
+            "photo-2.jpg",
+            "photo-3.jpg",
+            "photo-4.jpg"
+        ],
         "aboutRU": "test",
         "aboutEN": "test",
         "aboutUK": "test",
@@ -121,7 +133,7 @@ __[Наверх ↑](#Навигация)__
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
     "titleUK": "test",
     "titleRU": "test",
@@ -148,8 +160,14 @@ __[Наверх ↑](#Навигация)__
     "newPriceUAH": 14000,
     "newPriceRUB": 0,
     "newPriceUSD": 12000,
-    "frontImage": "gallery/1628861861901-front.jpg",
-    "backImage": "gallery/1628861861916-back.jpg",
+    "frontImage": "front.jpg",
+    "backImage": "back.jpg",
+    "photos": [
+      "photo-1.jpg",
+      "photo-2.jpg",
+      "photo-3.jpg",
+      "photo-4.jpg"
+    ],
     "aboutRU": "test",
     "aboutEN": "test",
     "aboutUK": "test",
@@ -173,7 +191,7 @@ __[Наверх ↑](#Навигация)__
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915"
 }
 ```
@@ -216,7 +234,7 @@ __[Наверх ↑](#Навигация)__
 > Body
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9",
     "titleRU": "платья",
     "titleEN": "dresses",
@@ -238,7 +256,7 @@ __[Наверх ↑](#Навигация)__
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9"
 }
 ```
@@ -277,14 +295,14 @@ __[Наверх ↑](#Навигация)__
 
 > POST Запрос
 ```
-/api/color
+/api/colors
 ```
 
 > Body
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
     "title": "M"
 }
@@ -303,7 +321,7 @@ __[Наверх ↑](#Навигация)__
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
 }
 ```
@@ -341,13 +359,13 @@ __[Наверх ↑](#Навигация)__
 
 > POST Запрос
 ```
-/api/add-size
+/api/size
 ```
 
 > Body
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "6da37ab4-ac0c-4668-b161-71e8d128c287",
     "title": "S"
 }
@@ -366,7 +384,7 @@ __[Наверх ↑](#Навигация)__
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "6da37ab4-ac0c-4668-b161-71e8d128c287"
 }
 ```
@@ -400,13 +418,13 @@ __[Наверх ↑](#Навигация)__
 
 > POST Запрос
 ```
-/api/add-season
+/api/season
 ```
 
 > Body
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87",
     "title": "SS'17"
 }
@@ -425,7 +443,7 @@ __[Наверх ↑](#Навигация)__
 
 ``` json
 {
-    "token": "generated token",
+    
     "uuid": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87"
 }
 ```
@@ -560,24 +578,12 @@ __[Наверх ↑](#Навигация)__
 
 > Body
 ``` json
-{
-    "token": "generated token",
+{   
     "uuid": "c70ce075-6eb3-4035-b8ad-6bbb7866fc77",
-    "status": "success",
-    "orderId": "454734530",
-    "date": "10/20/2021",
-    "time": "17:32",
-    "firstname": "test",
-    "lastname": "test",
-    "email": "minimal.wbd@gmail.com",
-    "phone": "+38023 123 1231",
+    "status": "new || success || not-paid",
+    "ttn": "ttn number",
+    "deliveryStatus": "formed || sent",
     "comment": "test",
-    "delivery": "DHL",
-    "city": "",
-    "department": "",
-    "address": "test",
-    "total": "28000",
-    "currency": "uah",
     "cart": [
         {
             "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
@@ -605,7 +611,7 @@ __[Наверх ↑](#Навигация)__
 
 <br>
 
-# Брошенные корзины (в разработке)
+# Брошенные корзины
 __[Наверх ↑](#Навигация)__
 <br>
 
@@ -618,23 +624,25 @@ __[Наверх ↑](#Навигация)__
 
 > Body
 ``` json
-{
-    "firstname": "test",
-    "lastname": "test",
-    "phone": "+38012 312 3123",
-    "email": "minimalwbd@gmail.com",
-    "comment": "test",
-    "cart": [
-        {
-            "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-            "params": [
-                {
-                    "count": "1",
-                    "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                    "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "firstname": "test",
+        "lastname": "test",
+        "phone": "+38012 312 3123",
+        "email": "minimalwbd@gmail.com",
+        "comment": "test",
+        "cart": [
+            {
+                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
+                "params": [
+                    {
+                        "count": "1",
+                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
+                        "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
+                    }
+                ]
+            }
+        ]
+    }
+]
 ```
