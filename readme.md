@@ -467,7 +467,7 @@ __[Наверх ↑](#Навигация)__
         "phone": "+380123123122",
         "comment": "",
         "delivery": "DHL",
-        "deliveryStatus" "formed"
+        "deliveryStatus": "formed"
         "city": "",
         "department": "",
         "address": "test",
@@ -518,7 +518,7 @@ __[Наверх ↑](#Навигация)__
         "phone": "+380123123122",
         "comment": "",
         "delivery": "DHL",
-        "deliveryStatus" "formed"
+        "deliveryStatus": "formed"
         "city": "",
         "department": "",
         "address": "test",
