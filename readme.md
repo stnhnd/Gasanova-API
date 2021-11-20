@@ -216,7 +216,7 @@ __[Наверх ↑](#Навигация)__
         "titleRU": "платья",
         "titleEN": "dresses",
         "titleUK": "сукні",
-        "imageURL": "gallery/1625321873748-dress.png"
+        "imageURL": "dress.png"
     }
 ]
 ```
@@ -237,7 +237,7 @@ __[Наверх ↑](#Навигация)__
     "titleRU": "платья",
     "titleEN": "dresses",
     "titleUK": "сукні",
-    "imageURL": "gallery/1625321873748-dress.png"
+    "imageURL": "dress.png"
 }
 ```
 
