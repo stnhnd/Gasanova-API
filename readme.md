@@ -24,175 +24,182 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "category": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9",
-        "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
         "priceUAH": 15000,
         "priceUSD": 15000,
         "priceRUB": 15000,
         "newPriceUAH": 14000,
-        "newPriceUSD": 12000,
+        "newPriceUSD": 0,
         "newPriceRUB": 0,
+        "photos": [
+            "photo-1.jpg",
+            "photo-2.jpg",
+            "photo-3.jpg",
+            "photo-4.jpg"
+        ],
+        "_id": "61a4afc2c63be8e71aeb81b8",
         "titleUK": "test",
         "titleRU": "test",
         "titleEN": "test test",
         "link": "test-test",
         "article": "test",
-        "season": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87",
+        "category": "61a3ade5a9d75713f47d022f",
+        "season": "61a3ba49c9a4394f26faf593",
         "params": [
             {
-                "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
+                "color": "61a3b9f3f5015805829cd79e",
+                "secondColor": "61a3b9f3f5015805829cd795",
+                "pattern": "goose",
                 "sizes": [
                     {
                         "amount": 10,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
+                    {
+                        "amount": 7,
+                        "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             },
             {
-                "color": "53d38295-c425-4f01-8111-74338b71f92a",
+                "color": "61a3b9f3f5015805829cd795",
                 "sizes": [
                     {
                         "amount": 5,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
-                    },
-                    {
-                        "amount": 8,
-                        "size": "fdf5ba52-838f-41b2-8eeb-99740f11cf6b"
+                        "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             }
         ],
         "frontImage": "front.jpg",
         "backImage": "back.jpg",
-        "photos": [
-            "photo-1.jpg",
-            "photo-2.jpg",
-            "photo-3.jpg",
-            "photo-4.jpg"
-        ],
         "aboutRU": "test",
         "aboutEN": "test",
         "aboutUK": "test",
         "compoRU": "test",
         "compoEN": "test",
-        "compoUK": "test"
+        "compoUK": "test",
+        "__v": 0
     },
     {
-        "category": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9",
-        "uuid": "826fe6ff-b5e9-4fe7-8bd2-5227586532ac",
-        "priceUAH": 18000,
-        "priceUSD": 32000,
-        "priceRUB": 21000,
+        "priceUAH": 16000,
+        "priceUSD": 15000,
+        "priceRUB": 15000,
         "newPriceUAH": 0,
         "newPriceUSD": 0,
         "newPriceRUB": 0,
-        "titleUK": "test",
-        "titleRU": "test",
-        "titleEN": "test test",
-        "link": "test1",
-        "article": "test",
-        "season": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87",
-        "params": [
-            {
-                "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
-                "sizes": [
-                    {
-                        "amount": 0,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
-                    }
-                ]
-            }
-        ],
-        "frontImage": "front.jpg",
-        "backImage": "back.jpg",
         "photos": [
             "photo-1.jpg",
             "photo-2.jpg",
             "photo-3.jpg",
             "photo-4.jpg"
         ],
+        "_id": "61a6280b92459c044c5db748",
+        "titleUK": "test",
+        "titleRU": "test",
+        "titleEN": "test test",
+        "link": "test-test",
+        "article": "test",
+        "category": "61a3ade5a9d75713f47d022f",
+        "season": "61a3ba49c9a4394f26faf593",
+        "params": [
+            {
+                "color": "61a3b9f3f5015805829cd79e",
+                "pattern": "line",
+                "sizes": [
+                    {
+                        "amount": 10,
+                        "size": "61a3ba2e730503f53b36e63f"
+                    }
+                ]
+            }
+        ],
+        "frontImage": "front.jpg",
+        "backImage": "back.jpg",
         "aboutRU": "test",
         "aboutEN": "test",
         "aboutUK": "test",
         "compoRU": "test",
         "compoEN": "test",
-        "compoUK": "test"
+        "compoUK": "test",
+        "__v": 0
     }
 ]
 ```
 
 <br>
 
-**Добавить\Редактировать товар**
+**Добавить\Обновить\Удалить товары**
 
 > POST Запрос
 ```
-/api/product
+/api/products
 ```
 
 > Body
 
 ``` json
-{
-    "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-    "titleUK": "test",
-    "titleRU": "test",
-    "titleEN": "test test",
-    "article": "test",
-    "category": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9",
-    "season": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87",
-    "params": [
-        { 
-        "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9", 
-        "sizes": [{ "size": "6da37ab4-ac0c-4668-b161-71e8d128c287", "amount": 10 }] 
-        },
-        { 
-        "color": "53d38295-c425-4f01-8111-74338b71f92a", 
-        "sizes": [
-            { "size": "6da37ab4-ac0c-4668-b161-71e8d128c287", "amount": 5 },
-            { "size": "fdf5ba52-838f-41b2-8eeb-99740f11cf6b", "amount": 8 }
-            ] 
-        }
+[
+    {
+        "priceUAH": 15000,
+        "priceUSD": 15000,
+        "priceRUB": 15000,
+        "newPriceUAH": 0,
+        "newPriceUSD": 0,
+        "newPriceRUB": 0,
+        "photos": [
+            "photo-1.jpg",
+            "photo-2.jpg",
+            "photo-3.jpg",
+            "photo-4.jpg"
         ],
-    "priceUAH": 15000,
-    "priceRUB": 15000,
-    "priceUSD": 15000,
-    "newPriceUAH": 14000,
-    "newPriceRUB": 0,
-    "newPriceUSD": 12000,
-    "frontImage": "front.jpg",
-    "backImage": "back.jpg",
-    "photos": [
-      "photo-1.jpg",
-      "photo-2.jpg",
-      "photo-3.jpg",
-      "photo-4.jpg"
-    ],
-    "aboutRU": "test",
-    "aboutEN": "test",
-    "aboutUK": "test",
-    "compoRU": "test",
-    "compoEN": "test",
-    "compoUK": "test"
-}
-
-```
-
-<br>
-
-**Удалить товар**
-
-> POST Запрос
-```
-/api/delete
-```
-
-> Body
-
-``` json
-{
-    "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915"
-}
+        "_id": "61a4afc2c63be8e71aeb81b8",
+        "titleUK": "test",
+        "titleRU": "test",
+        "titleEN": "test test",
+        "link": "test-test",
+        "article": "test",
+        "category": "61a3ade5a9d75713f47d022f",
+        "season": "61a3ba49c9a4394f26faf593",
+        "params": [
+            {
+                "color": "61a3b9f3f5015805829cd79e",
+                "secondColor": "61a3b9f3f5015805829cd79e",
+                "pattern": "cell || goose || line || print || chameleon",
+                "sizes": [
+                    {
+                        "amount": 10,
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
+                    {
+                        "amount": 5,
+                        "size": "61a3ba49c9a4394f26faf591"
+                    }
+                ]
+            },
+            {
+                "color": "61a3b9f3f5015805829cd795",
+                "sizes": [
+                    {
+                        "amount": 10,
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
+                    {
+                        "amount": 5,
+                        "size": "61a3ba49c9a4394f26faf591"
+                    }
+                ]
+            }
+        ],
+        "frontImage": "front.jpg",
+        "backImage": "back.jpg",
+        "aboutRU": "test",
+        "aboutEN": "test",
+        "aboutUK": "test",
+        "compoRU": "test",
+        "compoEN": "test",
+        "compoUK": "test",
+    }
+]
 ```
 
 <br>
@@ -212,50 +219,35 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9",
+        "_id": "61a3ade5a9d75713f47d022f",
         "titleRU": "платья",
         "titleEN": "dresses",
         "titleUK": "сукні",
-        "imageURL": "dress.png"
+        "imageURL": "dress.png",
     }
 ]
 ```
 
 <br>
 
-**Добавить\Редактировать категорию**
+**Добавить\Редактировать\Удалить категории**
 
 > POST Запрос
 ```
-/api/category
+/api/categories
 ```
 
 > Body
 ``` json
-{
-    "uuid": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9",
-    "titleRU": "платья",
-    "titleEN": "dresses",
-    "titleUK": "сукні",
-    "imageURL": "dress.png"
-}
-```
-
-<br>
-
-**Удалить категорию**
-
-> POST Запрос
-```
-/api/delete-category
-```
-
-> Body
-
-``` json
-{
-    "uuid": "0273b74e-9a3c-4392-bfeb-b427a47d9cb9"
-}
+[
+    {
+        "_id": "61a3ade5a9d75713f47d022f",
+        "titleRU": "платья",
+        "titleEN": "dresses",
+        "titleUK": "сукні",
+        "imageURL": "dress.png"
+    }
+]
 ```
 
 <br>
@@ -275,12 +267,12 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
-        "hex": "#FFFFFF"
+        "_id": "61a3b9f3f5015805829cd795",
+        "hex": "#5C3BFE",
     },
     {
-        "uuid": "53d38295-c425-4f01-8111-74338b71f92a",
-        "hex": "#E5B936"
+        "_id": "61a3b9f3f5015805829cd79e",
+        "hex": "#FFFFFF",
     }
 ]
 ```
@@ -288,7 +280,7 @@ __[Наверх ↑](#Навигация)__
 <br>
 
 
-**Добавить\Редактировать цвет**
+**Добавить\Редактировать\Удалить цвета**
 
 > POST Запрос
 ```
@@ -298,27 +290,16 @@ __[Наверх ↑](#Навигация)__
 > Body
 
 ``` json
-{
-    "uuid": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
-    "hex": "#E5B936"
-}
-```
-
-<br>
-
-**Удалить цвет**
-
-> POST Запрос
-```
-/api/delete-color
-```
-
-> Body
-
-``` json
-{
-    "uuid": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
-}
+[
+    {
+        "_id": "61a3b9f3f5015805829cd795",
+        "hex": "#5C3BFE"
+    },
+    {
+        "_id": "61a3b9f3f5015805829cd79e",
+        "hex": "#FFFFFF"
+    }
+]
 ```
 
 <br>
@@ -338,48 +319,37 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-        "title": "S"
+        "_id": "61a3ba2e730503f53b36e63f",
+        "title": "M",
     },
     {
-        "uuid": "fdf5ba52-838f-41b2-8eeb-99740f11cf6b",
-        "title": "M"
+        "_id": "61a3ba49c9a4394f26faf591",
+        "title": "S",
     }
 ]
 ```
 
 <br>
 
-**Добавить\Редактировать размер**
+**Добавить\Редактировать\Удалить размеры**
 
 > POST Запрос
 ```
-/api/size
+/api/sizes
 ```
 
 > Body
 ``` json
-{
-    "uuid": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-    "title": "S"
-}
-```
-
-<br>
-
-**Удалить размер**
-
-> POST Запрос
-```
-/api/delete-size
-```
-
-> Body
-
-``` json
-{
-    "uuid": "6da37ab4-ac0c-4668-b161-71e8d128c287"
-}
+[
+    {
+        "_id": "61a3ba2e730503f53b36e63f",
+        "title": "M"
+    },
+    {
+        "_id": "61a3ba49c9a4394f26faf591",
+        "title": "S"
+    }
+]
 ```
 
 <br>
@@ -399,7 +369,7 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87",
+        "_id": "61a3ba49c9a4394f26faf593",
         "title": "SS'17"
     }
 ]
@@ -407,36 +377,21 @@ __[Наверх ↑](#Навигация)__
 
 <br>
 
-**Добавить\Редактировать коллекцию**
+**Добавить\Редактировать\Удалить коллекцию**
 
 > POST Запрос
 ```
-/api/season
+/api/seasons
 ```
 
 > Body
 ``` json
-{
-    "uuid": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87",
-    "title": "SS'17"
-}
-```
-
-<br>
-
-**Удалить коллекцию**
-
-> POST Запрос
-```
-/api/delete-season
-```
-
-> Body
-
-``` json
-{
-    "uuid": "7e5d6ded-d86b-4787-9ee7-0d4392aa0b87"
-}
+[
+    {
+        "_id": "61a3ba49c9a4394f26faf593",
+        "title": "SS'17"
+    }
+]
 ```
 
 <br>
@@ -456,106 +411,39 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "b69ea756-a706-4583-9adb-08892c93840c",
-        "status": "new",
-        "orderId": "454744237",
-        "date": "10/20/2021",
-        "time": "18:05",
-        "firstname": "Максим",
-        "lastname": "Калашник",
-        "email": "minimalwbd@gmail.com",
-        "phone": "+380123123122",
-        "comment": "",
-        "delivery": "DHL",
-        "deliveryStatus": "formed"
-        "city": "",
-        "department": "",
-        "address": "test",
-        "total": "42000",
+        "status": "not-paid",
+        "_id": "61a7c96f29c3d72bc4a5e8d9",
+        "date": "12/01/2021",
+        "time": "21:13",
+        "firstname": "test",
+        "lastname": "test",
+        "email": "minimal.wbd@gmail.com",
+        "phone": "+38012 312 3123",
+        "comment": "test",
+        "delivery": "Новая почта (в отделение)",
+        "city": "м. Суми",
+        "department": "Відділення №8 (до 30 кг): просп. Михайла Лушпи, 13",
+        "address": "",
+        "total": "28000",
         "currency": "uah",
+        "deliveryStatus": "formed",
+        "userId": null,
         "cart": [
             {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
                 "params": [
                     {
-                        "count": 1,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                        "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
+                        "count": 2,
+                        "size": "S",
+                        "sizeId": "61a3ba49c9a4394f26faf591",
+                        "color": "#5C3BFE",
+                        "secondColor": null,
+                        "colorId": "61a3b9f3f5015805829cd795",
+                        "pattern": null
                     }
-                ]
-            },
-            {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-                "params": [
-                    {
-                        "count": 1,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                        "color": "53d38295-c425-4f01-8111-74338b71f92a"
-                    }
-                ]
-            },
-            {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-                "params": [
-                    {
-                        "count": 1,
-                        "size": "fdf5ba52-838f-41b2-8eeb-99740f11cf6b",
-                        "color": "53d38295-c425-4f01-8111-74338b71f92a"
-                    }
-                ]
+                ],
+                "productId": "61a4afc2c63be8e71aeb81b8"
             }
-        ]
-    },
-    {
-        "uuid": "41a6cd30-7111-4126-87ce-12c1e6399cc5",
-        "status": "new",
-        "orderId": "454754817",
-        "date": "10/20/2021",
-        "time": "18:39",
-        "firstname": "Максим",
-        "lastname": "Калашник",
-        "email": "minimalwbd@gmail.com",
-        "phone": "+380123123122",
-        "comment": "",
-        "delivery": "DHL",
-        "deliveryStatus": "formed"
-        "city": "",
-        "department": "",
-        "address": "test",
-        "total": "70000",
-        "currency": "uah",
-        "cart": [
-            {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-                "params": [
-                    {
-                        "count": 1,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                        "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
-                    }
-                ]
-            },
-            {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-                "params": [
-                    {
-                        "count": 1,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                        "color": "53d38295-c425-4f01-8111-74338b71f92a"
-                    }
-                ]
-            },
-            {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-                "params": [
-                    {
-                        "count": 3,
-                        "size": "fdf5ba52-838f-41b2-8eeb-99740f11cf6b",
-                        "color": "53d38295-c425-4f01-8111-74338b71f92a"
-                    }
-                ]
-            }
-        ]
+        ],
     }
 ]
 ```
@@ -572,33 +460,25 @@ __[Наверх ↑](#Навигация)__
 > Body
 ``` json
 {   
-    "uuid": "c70ce075-6eb3-4035-b8ad-6bbb7866fc77",
+    "_id": "61a7c96f29c3d72bc4a5e8d9",
     "status": "new || success || not-paid",
     "ttn": "ttn number",
     "deliveryStatus": "formed || sent",
     "comment": "test",
-    "cart": [
-        {
-            "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
+        "cart": [
+            {
+            "productId": "61a4afc2c63be8e71aeb81b8",
             "params": [
                 {
-                    "count": "1",
-                    "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                    "color": "53d38295-c425-4f01-8111-74338b71f92a"
+                    "count": 2,
+                    "sizeId": "61a3ba49c9a4394f26faf591",
+                    "secondColor": "",
+                    "colorId": "61a3b9f3f5015805829cd795",
+                    "pattern": ""
                 }
-            ]
-        },
-        {
-            "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-            "params": [
-                {
-                    "count": "1",
-                    "size": "fdf5ba52-838f-41b2-8eeb-99740f11cf6b",
-                    "color": "53d38295-c425-4f01-8111-74338b71f92a"
-                }
-            ]
+            ],
         }
-    ]
+    ],
 }
 ```
 
@@ -619,23 +499,31 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "firstname": "test",
-        "lastname": "test",
-        "phone": "+38012 312 3123",
-        "email": "minimalwbd@gmail.com",
-        "comment": "test",
-        "cart": [
-            {
-                "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
-                "params": [
-                    {
-                        "count": "1",
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287",
-                        "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9"
-                    }
-                ]
-            }
-        ]
+        "firstname": "Артем",
+        "lastname": "Прокофьев",
+        "phone": "+380 512 312 312",
+        "email": "fake@gmail.com",
+        "comment": "",
+        "cart": {
+            "items": [
+                {
+                    "_id": "61a7c572feea7919a41ea77f",
+                    "productId": "61a4afc2c63be8e71aeb81b8",
+                    "params": [
+                        {
+                            "_id": "61a7c572feea7919a41ea780",
+                            "count": 2,
+                            "size": "S",
+                            "sizeId": "61a3ba49c9a4394f26faf591",
+                            "color": "#FFFFFF",
+                            "secondColor": "#5C3BFE",
+                            "colorId": "61a3b9f3f5015805829cd79e",
+                            "pattern": "goose"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 ]
 ```
@@ -655,28 +543,44 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
+        "_id": "61a4afc2c63be8e71aeb81b8",
         "params": [
             {
-                "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
+                "color": "61a3b9f3f5015805829cd79e",
+                "secondColor": "61a3b9f3f5015805829cd795",
+                "pattern": "goose",
                 "sizes": [
                     {
                         "amount": 10,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
+                    {
+                        "amount": 7,
+                        "size": "61a3ba49c9a4394f26faf591"
+                    }
+                ]
+            },
+            {
+                "color": "61a3b9f3f5015805829cd795",
+                "sizes": [
+                    {
+                        "amount": 5,
+                        "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             }
         ]
     },
     {
-        "uuid": "826fe6ff-b5e9-4fe7-8bd2-5227586532ac",
+        "_id": "61a6280b92459c044c5db748",
         "params": [
             {
-                "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
+                "color": "61a3b9f3f5015805829cd79e",
+                "pattern": "line",
                 "sizes": [
                     {
-                        "amount": 15,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
+                        "amount": 10,
+                        "size": "61a3ba2e730503f53b36e63f"
                     }
                 ]
             }
@@ -698,28 +602,29 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "uuid": "e33cc2b5-f593-447b-b47c-ee6fa448e915",
+        "_id": "61a4afc2c63be8e71aeb81b8",
         "params": [
             {
-                "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
+                "color": "61a3b9f3f5015805829cd79e",
+                "secondColor": "61a3b9f3f5015805829cd795",
+                "pattern": "cell || goose || line || print || chameleon",
                 "sizes": [
                     {
                         "amount": 10,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
+                    {
+                        "amount": 7,
+                        "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "uuid": "826fe6ff-b5e9-4fe7-8bd2-5227586532ac",
-        "params": [
+            },
             {
-                "color": "4347da5d-4da2-4074-9136-a6d86a2f7ed9",
+                "color": "61a3b9f3f5015805829cd795",
                 "sizes": [
                     {
-                        "amount": 15,
-                        "size": "6da37ab4-ac0c-4668-b161-71e8d128c287"
+                        "amount": 5,
+                        "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             }
