@@ -516,41 +516,43 @@ __[Наверх ↑](#Навигация)__
         "_id": "61a4afc2c63be8e71aeb81b8",
         "params": [
             {
-                "color": "61a3b9f3f5015805829cd79e",
-                "secondColor": "61a3b9f3f5015805829cd795",
-                "pattern": "goose",
+                "color": {
+                    "photos": [
+                        "photo-1.jpg",
+                        "photo-2.jpg",
+                        "photo-3.jpg",
+                        "photo-4.jpg"
+                    ],
+                    "_id": "61a3b9f3f5015805829cd79e",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
                     {
                         "amount": 10,
                         "size": "61a3ba2e730503f53b36e63f"
                     },
                     {
-                        "amount": 7,
+                        "amount": 5,
                         "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             },
             {
-                "color": "61a3b9f3f5015805829cd795",
-                "sizes": [
-                    {
-                        "amount": 5,
-                        "size": "61a3ba49c9a4394f26faf591"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "_id": "61a6280b92459c044c5db748",
-        "params": [
-            {
-                "color": "61a3b9f3f5015805829cd79e",
-                "pattern": "line",
+                "color": {
+                    "photos": [],
+                    "_id": "61a3b9f3f5015805829cd795",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
                     {
                         "amount": 10,
                         "size": "61a3ba2e730503f53b36e63f"
+                    },
+                    {
+                        "amount": 5,
+                        "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             }
@@ -575,23 +577,40 @@ __[Наверх ↑](#Навигация)__
         "_id": "61a4afc2c63be8e71aeb81b8",
         "params": [
             {
-                "color": "61a3b9f3f5015805829cd79e",
-                "secondColor": "61a3b9f3f5015805829cd795",
-                "pattern": "cell || goose || line || print || chameleon",
+                "color": {
+                    "photos": [
+                        "photo-1.jpg",
+                        "photo-2.jpg",
+                        "photo-3.jpg",
+                        "photo-4.jpg"
+                    ],
+                    "_id": "61a3b9f3f5015805829cd79e",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
                     {
                         "amount": 10,
                         "size": "61a3ba2e730503f53b36e63f"
                     },
                     {
-                        "amount": 7,
+                        "amount": 5,
                         "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             },
             {
-                "color": "61a3b9f3f5015805829cd795",
+                "color": {
+                    "photos": [],
+                    "_id": "61a3b9f3f5015805829cd795",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
+                    {
+                        "amount": 10,
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
                     {
                         "amount": 5,
                         "size": "61a3ba49c9a4394f26faf591"
