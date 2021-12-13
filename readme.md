@@ -483,18 +483,12 @@ __[Наверх ↑](#Навигация)__
         "cart": {
             "items": [
                 {
-                    "_id": "61a7c572feea7919a41ea77f",
                     "productId": "61a4afc2c63be8e71aeb81b8",
                     "params": [
                         {
-                            "_id": "61a7c572feea7919a41ea780",
                             "count": 2,
-                            "size": "S",
-                            "sizeId": "61a3ba49c9a4394f26faf591",
-                            "color": "#FFFFFF",
-                            "secondColor": "#5C3BFE",
-                            "colorId": "61a3b9f3f5015805829cd79e",
-                            "pattern": "goose"
+                            "size": "61a3ba49c9a4394f26faf591",
+                            "color": "61a3b9f3f5015805829cd795"
                         }
                     ]
                 }
