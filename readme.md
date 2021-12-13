@@ -24,45 +24,50 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "priceUAH": 15000,
-        "priceUSD": 15000,
-        "priceRUB": 15000,
-        "newPriceUAH": 14000,
-        "newPriceUSD": 0,
-        "newPriceRUB": 0,
-        "photos": [
-            "photo-1.jpg",
-            "photo-2.jpg",
-            "photo-3.jpg",
-            "photo-4.jpg"
-        ],
-        "_id": "61a4afc2c63be8e71aeb81b8",
-        "titleUK": "test",
         "titleRU": "test",
         "titleEN": "test test",
+        "titleUK": "test",
+        "_id": "61a4afc2c63be8e71aeb81b8",
         "link": "test-test",
         "article": "test",
         "category": "61a3ade5a9d75713f47d022f",
         "season": "61a3ba49c9a4394f26faf593",
         "params": [
             {
-                "color": "61a3b9f3f5015805829cd79e",
-                "secondColor": "61a3b9f3f5015805829cd795",
-                "pattern": "goose",
+                "color": {
+                    "photos": [
+                        "photo-1.jpg",
+                        "photo-2.jpg",
+                        "photo-3.jpg",
+                        "photo-4.jpg"
+                    ],
+                    "_id": "61a3b9f3f5015805829cd79e",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
                     {
                         "amount": 10,
                         "size": "61a3ba2e730503f53b36e63f"
                     },
                     {
-                        "amount": 7,
+                        "amount": 5,
                         "size": "61a3ba49c9a4394f26faf591"
                     }
                 ]
             },
             {
-                "color": "61a3b9f3f5015805829cd795",
+                "color": {
+                    "photos": [],
+                    "_id": "61a3b9f3f5015805829cd795",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
+                    {
+                        "amount": 10,
+                        "size": "61a3ba2e730503f53b36e63f"
+                    },
                     {
                         "amount": 5,
                         "size": "61a3ba49c9a4394f26faf591"
@@ -70,51 +75,9 @@ __[Наверх ↑](#Навигация)__
                 ]
             }
         ],
-        "frontImage": "front.jpg",
-        "backImage": "back.jpg",
-        "aboutRU": "test",
-        "aboutEN": "test",
-        "aboutUK": "test",
-        "compoRU": "test",
-        "compoEN": "test",
-        "compoUK": "test",
-        "__v": 0
-    },
-    {
-        "priceUAH": 16000,
+        "priceUAH": 15000,
         "priceUSD": 15000,
         "priceRUB": 15000,
-        "newPriceUAH": 0,
-        "newPriceUSD": 0,
-        "newPriceRUB": 0,
-        "photos": [
-            "photo-1.jpg",
-            "photo-2.jpg",
-            "photo-3.jpg",
-            "photo-4.jpg"
-        ],
-        "_id": "61a6280b92459c044c5db748",
-        "titleUK": "test",
-        "titleRU": "test",
-        "titleEN": "test test",
-        "link": "test-test",
-        "article": "test",
-        "category": "61a3ade5a9d75713f47d022f",
-        "season": "61a3ba49c9a4394f26faf593",
-        "params": [
-            {
-                "color": "61a3b9f3f5015805829cd79e",
-                "pattern": "line",
-                "sizes": [
-                    {
-                        "amount": 10,
-                        "size": "61a3ba2e730503f53b36e63f"
-                    }
-                ]
-            }
-        ],
-        "frontImage": "front.jpg",
-        "backImage": "back.jpg",
         "aboutRU": "test",
         "aboutEN": "test",
         "aboutUK": "test",
@@ -146,12 +109,6 @@ __[Наверх ↑](#Навигация)__
         "newPriceUAH": 0,
         "newPriceUSD": 0,
         "newPriceRUB": 0,
-        "photos": [
-            "photo-1.jpg",
-            "photo-2.jpg",
-            "photo-3.jpg",
-            "photo-4.jpg"
-        ],
         "_id": "61a4afc2c63be8e71aeb81b8",
         "titleUK": "test",
         "titleRU": "test",
@@ -162,9 +119,17 @@ __[Наверх ↑](#Навигация)__
         "season": "61a3ba49c9a4394f26faf593",
         "params": [
             {
-                "color": "61a3b9f3f5015805829cd79e",
-                "secondColor": "61a3b9f3f5015805829cd79e",
-                "pattern": "cell || goose || line || print || chameleon",
+                "color": {
+                    "_id": "61a3b9f3f5015805829cd79e",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg",
+                    "photos": [
+                        "photo-1.jpg",
+                        "photo-2.jpg",
+                        "photo-3.jpg",
+                        "photo-4.jpg"
+                    ]
+                },
                 "sizes": [
                     {
                         "amount": 10,
@@ -177,7 +142,11 @@ __[Наверх ↑](#Навигация)__
                 ]
             },
             {
-                "color": "61a3b9f3f5015805829cd795",
+                "color": {
+                    "_id": "61a3b9f3f5015805829cd795",
+                    "frontImage": "front.jpg",
+                    "backImage": "back.jpg"
+                },
                 "sizes": [
                     {
                         "amount": 10,
@@ -190,16 +159,16 @@ __[Наверх ↑](#Навигация)__
                 ]
             }
         ],
-        "frontImage": "front.jpg",
-        "backImage": "back.jpg",
         "aboutRU": "test",
         "aboutEN": "test",
         "aboutUK": "test",
         "compoRU": "test",
         "compoEN": "test",
         "compoUK": "test",
+        "__v": 0
     }
 ]
+
 ```
 
 <br>
@@ -267,12 +236,18 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
+        "hex2": "#FF6C37",
+        "pattern": "chameleon",
         "_id": "61a3b9f3f5015805829cd795",
-        "hex": "#5C3BFE",
+        "hex1": "#FFFFFF",
+        "__v": 0
     },
     {
+        "hex2": "#FF69B4",
+        "pattern": "",
         "_id": "61a3b9f3f5015805829cd79e",
-        "hex": "#FFFFFF",
+        "hex1": "#FFFFFF",
+        "__v": 0
     }
 ]
 ```
@@ -292,12 +267,16 @@ __[Наверх ↑](#Навигация)__
 ``` json
 [
     {
-        "_id": "61a3b9f3f5015805829cd795",
-        "hex": "#5C3BFE"
+    "_id": "61a3b9f3f5015805829cd795",
+    "hex1": "#FFFFFF",
+    "hex2": "#FF6C37",
+    "pattern": "chameleon"
     },
     {
-        "_id": "61a3b9f3f5015805829cd79e",
-        "hex": "#FFFFFF"
+    "_id": "61a3b9f3f5015805829cd79e",
+    "hex1": "#FFFFFF",
+    "hex2": "#FF69B4",
+    "pattern": ""
     }
 ]
 ```
@@ -412,19 +391,19 @@ __[Наверх ↑](#Навигация)__
 [
     {
         "status": "not-paid",
-        "_id": "61a7c96f29c3d72bc4a5e8d9",
-        "date": "12/01/2021",
-        "time": "21:13",
+        "_id": "61b48ec73db8c614f08344f8",
+        "date": "12/11/2021",
+        "time": "13:43",
         "firstname": "test",
         "lastname": "test",
         "email": "minimal.wbd@gmail.com",
         "phone": "+38012 312 3123",
         "comment": "test",
-        "delivery": "Новая почта (в отделение)",
-        "city": "м. Суми",
-        "department": "Відділення №8 (до 30 кг): просп. Михайла Лушпи, 13",
-        "address": "",
-        "total": "28000",
+        "delivery": "DHL",
+        "city": "",
+        "department": "",
+        "address": "test",
+        "total": "30000",
         "currency": "uah",
         "deliveryStatus": "formed",
         "userId": null,
@@ -433,17 +412,15 @@ __[Наверх ↑](#Навигация)__
                 "params": [
                     {
                         "count": 2,
-                        "size": "S",
-                        "sizeId": "61a3ba49c9a4394f26faf591",
-                        "color": "#5C3BFE",
-                        "secondColor": null,
-                        "colorId": "61a3b9f3f5015805829cd795",
-                        "pattern": null
+                        "size": "61a3ba49c9a4394f26faf591",
+                        "color": "61a3b9f3f5015805829cd795"
                     }
                 ],
-                "productId": "61a4afc2c63be8e71aeb81b8"
+                "productId": "61a4afc2c63be8e71aeb81b8",
+                "price": "15000"
             }
         ],
+        "__v": 0
     }
 ]
 ```
@@ -465,18 +442,17 @@ __[Наверх ↑](#Навигация)__
     "ttn": "ttn number",
     "deliveryStatus": "formed || sent",
     "comment": "test",
-        "cart": [
-            {
-            "productId": "61a4afc2c63be8e71aeb81b8",
+    "cart": [
+        {
             "params": [
                 {
                     "count": 2,
-                    "sizeId": "61a3ba49c9a4394f26faf591",
-                    "secondColor": "",
-                    "colorId": "61a3b9f3f5015805829cd795",
-                    "pattern": ""
+                    "size": "61a3ba49c9a4394f26faf591",
+                    "color": "61a3b9f3f5015805829cd795"
                 }
             ],
+            "productId": "61a4afc2c63be8e71aeb81b8",
+            "price": "15000"
         }
     ],
 }
